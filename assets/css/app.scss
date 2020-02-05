@@ -1,0 +1,79 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+html, .container-fluid {
+    background-color: black !important;
+    color: limegreen;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.line {
+    margin-bottom: unset;
+}
+
+$height:15px;
+
+.outer {
+    width:100%;
+}
+
+.no-hover:hover {
+    text-decoration: none;
+}
+
+.title {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: blue;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plain {
+    &.outer {
+        border:1px solid limegreen;
+    }
+    .inner {
+        background-color:limegreen;
+        height:25px;
+    }
+    .ninety {
+        width:90%;
+    }
+    .eighty {
+        width:80%;
+    }
+    .hundred {
+        width:100%;
+    }
+}
+
+#cursor {
+    border-left: .1em solid;
+    animation: blink .7s steps(1) infinite;
+}
+
+#helloworld {
+    display:block;
+    line-height:10px;
+    font-size: 10px;
+    font-weight:bold;
+    white-space:pre;
+    font-family: monospace;
+    color: limegreen;
+    background: black;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+@media (max-width: 767px) {
+    #helloworld {
+        font-size: 4px;
+    }
+}

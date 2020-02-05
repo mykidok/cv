@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+    php:
+        build: docker/php-fpm
+        ports:
+            - "9000:9000"
+        volumes:
+            - .:/var/www/symfony:cached
+            - ./logs:/var/www/symfony/var/log:cached
+        tty: true
+        extra_hosts:
+            - "docker.host:127.0.0.1"
+    nginx:
+        build: docker/nginx
+        ports:
+            - "80:80"
+        links:
+            - php
+        volumes:
+            - ./logs/nginx:/var/log/nginx:cached
+            - .:/var/www/symfony:cached

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Mickael Pegnin{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            <div class="container-fluid">
+                <div class="text-center">
+                    <code>
+                            <span id="helloworld">
+ __    __   _______  __       __        ______      ____    __    ____   ______    ______       __       _______      __
+|  |  |  | |   ____||  |     |  |      /  __  \     \   \  /  \  /   /  /  __  \  |   _  \     |  |     |       \    |  |
+|  |__|  | |  |__   |  |     |  |     |  |  |  |     \   \/    \/   /  |  |  |  | |  |_)  |    |  |     |  .--.  |   |  |
+|   __   | |   __|  |  |     |  |     |  |  |  |      \            /   |  |  |  | |      /     |  |     |  |  |  |   |  |
+|  |  |  | |  |____ |  `----.|  `----.|  `--'  |       \    /\    /    |  `--'  | |  |\  \----.|  `----.|  '--'  |   |__|
+|__|  |__| |_______||_______||_______| \______/         \__/  \__/      \______/  | _| `._____||_______||_______/    (__)
+                            </span>
+                    </code>
+                </div>
+                <div class="text-center text-white" id="app">
+
+                </div>
+                <hr class="line" style="border-color: limegreen; background: black; height: 2px; width: 50%; margin-top: 5px">
+                <hr class="line" style="border-color: limegreen; background: black; height: 2px; width: 40%; margin-top: 5px">
+                <hr class="line" style="border-color: limegreen; background: black; height: 2px; width: 30%;margin-top: 5px">
+                <hr class="line" style="border-color: limegreen; background: black; height: 2px; width: 20%;margin-top: 5px">
+                <hr class="line" style="border-color: limegreen; background: black; height: 2px; width: 10%;margin-top: 5px">
+                <hr class="line" style="border-color: limegreen; background: black; height: 2px; width: 2%;margin-top: 5px">
+                <div class="row">
+                    <div class="col-md-8" id="personal-data">
+                        <p class="line">$&nbsp;<span class="text-white">phone:</span> +33 6 01 18 45 46</p>
+                        <p class="line">$&nbsp;<span class="text-white">address:</span> 31, Rue Odette et Lucien Marchelidon 37300 Joué Les Tours</p>
+                        <p class="line">$&nbsp;<span class="text-white">country:</span> France</p>
+                        <p class="line">$&nbsp;<span class="text-white">email: </span><a href="mailto:mickael.pegnin@gmail.com" style="color: limegreen">mickael.pegnin@gmail.com</a></p>
+                        <p class="line">$&nbsp;<span class="text-white">age:</span> 29</p>
+                        <br>
+                            <div class="row"  style="margin-left: unset">
+                                <div class="mr-2 mb-4">
+                                    <code>
+                                        <a class="no-hover" href="https://www.linkedin.com/in/mickael-pegnin-a8a20168/">
+                                    <span style="display:block;line-height:2px; font-size: 2px; font-weight:bold;white-space:pre;font-family: monospace;color: limegreen; background: black;">             /////////////
+         /////////////////////
+      /////////////////////////**
+    /////////////////////////******
+   ///////    /////////////*********
+  ///////      //////////************
+ /////////    /////////***************
+/////////////////////******************
+//////////    ///             *********
+//////////    ///             *********
+//////////    /**    *****     ********
+//////////    ***    *****     ********
+//////////    ***    *****     ********
+ ////////*    ***    *****     *******
+  /////***    ***    *****     ******
+   //*******************************
+    *******************************
+      ***************************
+         *********************
+           ****************
+                                    </span>
+                                        </a>
+                                    </code>
+                                </div>
+                                <div>
+                                    <code>
+                                        <a class="no-hover" href="https://github.com/mykidok">
+                                        <span style="display:block;line-height:2px; font-size: 2px; font-weight:bold;white-space:pre;font-family: monospace;color: limegreen; background: black;">             *************
+         *********************
+      ***************************
+    *******************************
+   ******   ***************   ******
+  ******                       ******
+ ********                     ********
+********                       ********
+*******                         *******
+*******                         *******
+*******                         *******
+*******                         *******
+********                       ********
+ *********                   *********
+  ****  ********       **************
+   ****   *****         ************
+    ****                ***********
+      ********           ********
+         ******          *****
+           ****          ***
+                                        </span>
+                                        </a>
+                                    </code>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <code class="text-center">
+                            <span style="display:block;line-height:8px; font-size: 8px; font-weight:bold;white-space:pre;font-family: monospace;color: limegreen; background: black;">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@/..*..,,...,(@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@,,,,,.*,,,,*,,,,,.,,#@@@@@@@@@@@@@@@
+@@@@@@@.,,,.,..*,,,,,*,,,,*.,,..&@@@@@@@@@@@
+@@@@@@.. ..,,,..,,,,,,*,,*,,.,,,,,,@@@@@@@@@
+@@@@@&..,.   .,..,,,,,,,,,,,,.,,,...@@@@@@@@
+@@@@@@. ., /(//,  ........*///,.... @@@@@@@@
+@@@@@@ .(####%%%%%%%%%%%%%%%%%###(....@@@@@@
+@@@@@@./(####%%%%%%%%%%%%%%%%%####(.. @@@@@@
+@@@@@@.((####%%%%%%%%%%%%%%%%%###((*. @@@@@@
+@@@@@&.(((####%%%%%%%%%%%%%%#####(((. @@@@@@
+@@@@@&/(,/(((*..*###%###*...,**,,((/  @@@@@@
+@@@@@@/((####((//((###(((/((#####((/* @@@@@@
+@@@@/%/((.@%///,(((####((/#/*&%/#((//*##@@@@
+@@@@(//((@&*   /@/(#%##(((*,  *@*#(/*(/(@@@@
+@@@@%(/(##%/((%@%##%%%##%@/..%&#(/./#&@@@@@@
+@@@@@#*(#%%%%%%%%##%%%%%%%%%%%%%%#(/ (#@@@@@
+@@@@@@.(##%%%%%%%##%%#(%%%%%%%%%##/.((@@@@@@
+@@@@@@@*(#%%%####/####*#%%%%%%%##(,*@@@@@@@@
+@@@@@@@.,(##,...,,....,,,,,,#%##(, @@@@@@@@@
+@@@@@@@@,....%/,*(/***///.(.....  @@@@@@@@@@
+@@@@@@@@@# ..,#(/((%&%(((##...   @@@@@@@@@@@
+@@@@@@@@@@@ ..,((#***/(###...  @@@@@@@@@@@@@
+@@@@@@@@@@@@@ .............  @@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@ ......... #@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@.   .@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span>
+                        </code>
+                    </div>
+                </div>
+                <div id="root"></div>
+        {% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+            <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+            <script type="text/javascript">
+                var typewriter = new Typewriter('#app', {
+                    cursor: '█'
+                });
+
+                typewriter.typeString('from Mickael Pegnin').start();
+            </script>
+        {% endblock %}
+    </body>
+</html>
